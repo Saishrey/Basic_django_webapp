@@ -130,3 +130,5 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     # '/var/www/static/',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-saishrey-djangotutorial-0e3g1nye6ep.ws-us65.gitpod.io']
