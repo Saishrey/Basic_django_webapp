@@ -1,1 +1,1 @@
-# django_tutorial
+# Basic Django Webapp
