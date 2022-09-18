@@ -5,6 +5,34 @@
 
 
 {% block body %}
+<div class= "container-fluid px-0">
+    <!-- <img src="https://source.unsplash.com/1366x400/?iphone" class="d-block w-100 mx-0" alt="..."> -->
+    <!-- <img src="../static/img/contact.jfif" class="d-block w-100 mx-0" alt="..."> -->
+    <h1 class="my-4 text-center">Contact us.</h1>
+</div>
+<div class="container">
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Pavitra Prabhakar">
+        </div>
+    
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" name="phone" id="phone" placeholder="9999999999">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Comments</label>
+            <textarea class="form-control" name="comments" id="comments" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
 
 {% endblock body %}
 
